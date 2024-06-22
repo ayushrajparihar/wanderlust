@@ -40,11 +40,14 @@ To setup the project locally follow the steps:
 1. Fork and Star the project.
 2. Clone your forked repository.
 3. Run `npm run installer`.
-4. Set up your MongoDB database:
-   - Open MongoDB Compass and run MongoDB locally at `mongodb://localhost:27017`.
-   - Import sample posts data from `backend/data/sample_posts.json`.
-5. Rename the `.env.sample` file in the backend and frontend folders to `.env`.
-6. Launch the development server with `npm start` in the root directory of the repository.
+4. Set up your database
+   - Run MongoDB locally at `mongodb://localhost:27017`.
+   - Open MongoDB compass and connect to the same URL.
+   - Create a database named wanderlust and add two collections, 'posts' and 'users' 
+   - Import sample posts data to posts collection from `backend/data/sample_posts.json`.
+   - Run redis at `redis://127.0.0.1:6379` locally
+6. Rename the `.env.sample` file in the backend folder to `.env` and copy it to the frontend folder.
+7. Launch the development server with `npm start` in the root directory of the repository.
 
 <a name="request-for-changes-pull-requests"></a>
 
